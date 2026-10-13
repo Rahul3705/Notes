@@ -35,3 +35,11 @@ Priority 3: End-to-end architecture
 
 Priority 4: Clarify questions with Krishna
 Prepare specific questions about the repository, service setup, deployment, and unclear architecture decisions before the 30-minute discussion.
+
+3. What you should deliver
+By the next discussion or sprint grooming session, aim to have:
+- A clear understanding of the repository and service architecture.
+- A basic end-to-end flow of how the system works.
+- Notes explaining the current CI/CD process.
+- A list of technical gaps, dependencies, and enhancement opportunities.
+- Questions or proposed stories for anything that remains unclear.
