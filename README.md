@@ -1,144 +1,98 @@
-Task: Groom All SP3 Commercial OS – AEF Frontend Jira Stories Based on Figma
+Task: Review and Refine SP3 Commercial OS Frontend Jira Stories
 
-Act as a Senior Frontend Engineer and Business Analyst working on the Commercial OS project.
+You have already updated the frontend Jira stories assigned to me under SP3 – Commercial OS – Backlog – AEF based on the Figma board.
 
-I have been assigned all frontend stories for SP3 – Commercial OS – Backlog – AEF Jira. Your task is to review every assigned frontend story and groom it based on the corresponding designs and requirements in the Figma board.
+Before considering the work complete or sharing it with me, perform a thorough review of every updated story. The previous updates contain details that are not relevant, so focus on keeping each story clear, concise, accurate, and aligned with the actual UI requirements.
 
-Step 1: Review All Assigned Frontend Stories
+1. Review Every Jira Story
 
-* Identify all frontend stories assigned to me under SP3 – Commercial OS – Backlog – AEF Jira.
-* Review each story individually, including its title, description, acceptance criteria, existing comments, linked issues, and subtasks.
-* Understand the business requirement and expected frontend behavior before making any changes.
-* Identify incomplete descriptions, ambiguous requirements, missing acceptance criteria, duplicated requirements, and inconsistencies with the Figma designs.
-* Do not skip any assigned frontend story.
+* Review all assigned frontend stories and their current descriptions, acceptance criteria, subtasks, and Figma references.
+* Compare the updated Jira content against the relevant Figma pages.
+* Understand the actual purpose of each story and the expected user-facing functionality.
+* Remove irrelevant, redundant, repetitive, speculative, or overly technical details that do not contribute to the story.
+* Do not add details simply to make the story look more comprehensive.
 
-Step 2: Validate Against the Figma Board
+2. Refine the Story Description
 
-* Access the relevant Figma board and inspect the designs, frames, page names, and page numbers corresponding to each Jira story.
-* Match each story to the correct Figma page and relevant design frame.
-* Verify UI elements, page layouts, navigation, buttons, forms, fields, tables, modals, empty states, loading states, error states, and user interactions where applicable.
-* Use the actual Figma designs as the reference. Do not assume requirements that are not supported by the designs or existing business documentation.
-* If a story cannot be confidently mapped to a Figma page, flag it for clarification rather than guessing.
+Each description should clearly explain:
 
-Step 3: Improve the Story Description
+* What functionality needs to be implemented.
+* What the user should be able to do on the screen.
+* The relevant business or UI context, where necessary.
 
-Rewrite the description wherever needed so that a developer, QA engineer, and business analyst can easily understand the requirement.
+Keep descriptions short and specific. Avoid lengthy explanations, unrelated business context, implementation assumptions, and generic statements.
 
-For each story, make the following clear:
+Use the following format when appropriate:
 
-* Purpose: What feature or functionality is required?
-* User perspective: Who uses the functionality and why?
-* Expected behavior: What should happen when the user interacts with the UI?
-* Design reference: Which Figma page and frame represent the requirement?
-* Scope: What is included and what is outside the scope, where known?
+User Story: As a [user type], I want to [perform an action], so that [achieve a purpose].
 
-Keep the original business intent intact. Use clear, concise, natural language appropriate for Jira. Avoid generic or AI-sounding descriptions.
+Only use this format when it accurately represents the requirement. Do not invent a user role, action, or business purpose if the source material does not establish it.
 
-Step 4: Review and Update Acceptance Criteria
+3. Refine the Acceptance Criteria
 
-* Check whether the existing acceptance criteria are complete, testable, and aligned with the Figma design.
-* Rewrite unclear or incomplete criteria.
-* Add missing criteria for relevant user interactions, validations, navigation, UI states, and error handling when supported by the requirements.
-* Use numbered, independently testable acceptance criteria.
-* Include expected results so QA can verify each criterion.
-* Do not invent business rules, API behavior, validation messages, or technical requirements.
-* Record any unresolved questions as clarification points instead of treating assumptions as confirmed requirements.
+* Make each acceptance criterion clear, testable, and directly related to the story.
+* Cover the relevant UI behavior, user interactions, validation, and states shown in Figma or explicitly required by the existing requirements.
+* Remove duplicate criteria and unrelated backend or business rules that are outside the frontend story’s scope.
+* Avoid vague wording such as “works correctly” or “looks good.”
+* Do not invent expected behavior, validation rules, API responses, error messages, or edge cases.
+* If an important requirement is unclear or missing from both Jira and Figma, flag it as an open question rather than assuming an answer.
 
-Step 5: Add Figma Page References
+4. Verify Figma References
 
-For every story:
+* Add the exact Figma board page name and page number to each story, wherever available.
+* Verify that the referenced page actually contains the UI relevant to that story.
+* Do not guess page numbers or use a page that only appears indirectly related.
+* If a page number cannot be verified, clearly flag it for confirmation.
 
-* Add the correct Figma board page number and page name to the Jira description.
-* Include the relevant frame or section name when available.
-* Add a direct Figma link to the relevant page or frame if accessible.
-* Ensure the reference points to the actual design for that story.
-* If page numbering is unavailable or ambiguous, record the page name and flag the missing page number for confirmation.
+5. Review Subtasks
 
-Use a consistent format, for example:
+Create or update subtasks only when they represent genuinely separate, necessary pieces of work.
 
-Figma Reference
+For frontend stories, consider relevant tasks such as:
 
-* Page Number: [Verified page number]
-* Page Name: [Verified page name]
-* Frame/Section: [Relevant frame name]
-* Design Link: [Verified Figma link]
+* Implementing the UI components and layout.
+* Implementing interactions and state changes.
+* Handling validation or UI states, when required.
+* Writing or updating tests.
 
-The example above is a template. Do not use placeholder values in the final updated stories.
+Do not create a separate subtask for every minor UI element. Avoid duplicate subtasks, unnecessary backend work, and tasks already covered by another story. Do not create subtasks if the work is sufficiently small to remain within the parent story.
 
-Step 6: Identify and Create Subtasks
+6. Follow These Rules Strictly
 
-Determine whether each frontend story requires subtasks to make the work easier to implement, review, and test.
+* Keep the Jira stories concise and relevant.
+* Use Figma and existing requirements as the source of truth.
+* Preserve the original business intent and scope.
+* Do not add assumptions or unsupported requirements.
+* Do not copy large sections of Figma content into Jira.
+* Do not introduce implementation details unless they are necessary for the story.
+* Do not change story ownership, sprint assignment, priority, status, or other Jira fields unless explicitly required.
+* Avoid duplicating functionality already covered by another story.
+* Maintain consistency in terminology across related stories.
+* If information is missing, flag it rather than fabricating details.
 
-Create subtasks only when they represent meaningful, separately trackable work. Consider the following where applicable:
+7. Final Quality Review
 
-* Frontend component or page implementation
-* Reusable component or design-system integration
-* Form fields and validation
-* Navigation and user interactions
-* API integration, if included in the story scope
-* Loading, empty, success, and error states
-* Unit or component tests
-* Accessibility and responsive behavior, where required
+Before completing the task, review every story again and confirm:
 
-For each proposed subtask:
+1. The description explains the purpose of the story clearly.
+2. The acceptance criteria are concise, testable, and relevant.
+3. All content matches the corresponding Figma page and available requirements.
+4. The correct Figma page reference is included.
+5. Subtasks are necessary and not duplicated.
+6. Irrelevant details, assumptions, and repetition have been removed.
+7. No existing Jira fields or unrelated stories have been changed.
 
-* Provide a clear title.
-* Write a concise description.
-* Define its scope and expected outcome.
-* Link it to the correct parent story.
-* Avoid unnecessary task splitting or duplicating existing subtasks.
+8. Report the Results
 
-Check existing subtasks before creating new ones.
+After reviewing all stories, provide a concise summary containing:
 
-Step 7: Update Jira Carefully
+* Total stories reviewed.
+* Stories updated and the key changes made.
+* Stories that required no changes.
+* Missing Figma references or unclear requirements.
+* Any duplicate scope or unnecessary subtasks identified.
+* Items that need clarification from the BA, designer, or team.
 
-If Jira editing and creation permissions are available:
+Important: Do not stop after generating recommendations. Review the actual Jira stories and make the necessary corrections if Jira editing access is available. If any change cannot be made, explain exactly what remains pending.
 
-* Update the story description and acceptance criteria.
-* Add the verified Figma references.
-* Create only the necessary missing subtasks.
-* Preserve existing issue keys, relationships, labels, estimates, priorities, sprint assignments, and other fields unless a change is explicitly required and justified.
-* Do not modify unrelated stories or fields.
-* Do not transition issues to a different status without authorization.
-
-If any information is unclear, or if the Figma board, Jira issue, or required permissions are inaccessible, do not guess. Report the blocker and continue with the stories that can be reviewed.
-
-Before making bulk changes, provide a proposed summary of the updates. If approval is required to perform Jira changes, wait for my approval.
-
-Step 8: Final Review and Report
-
-After reviewing all assigned stories, provide a summary table containing:
-
-Field	Details
-Jira Issue Key	Existing story key
-Story Title	Current or updated title
-Description	Complete / Updated / Needs clarification
-Acceptance Criteria	Complete / Updated / Needs clarification
-Figma Reference	Verified page number and name
-Subtasks	Existing / Created / Proposed / Not required
-Open Questions	Unresolved requirements or dependencies
-Status	Reviewed / Updated / Blocked
-
-Also provide:
-
-1. Total number of assigned frontend stories identified.
-2. Number of stories reviewed and updated.
-3. Number of stories requiring clarification.
-4. Number of subtasks created or proposed.
-5. Stories that could not be mapped to Figma.
-6. Any dependencies or blockers requiring input from the BA, UX designer, or technical lead.
-7. A list of the remaining actions required to complete grooming.
-
-Important Rules
-
-* Review every assigned frontend story, not just a sample.
-* Base all changes on the actual Jira requirements and Figma designs.
-* Do not invent page numbers, Figma links, business rules, or acceptance criteria.
-* Preserve existing business intent and project conventions.
-* Avoid duplicate subtasks and unnecessary changes.
-* Clearly distinguish verified information from assumptions and open questions.
-* Keep all Jira updates traceable and report exactly what was changed.
-* If access is unavailable, provide the proposed updates without claiming that Jira or Figma has been modified.
-* Do not mark the grooming complete until every assigned story has been reviewed and all unresolved items have been documented.
-
-Start by identifying the complete list of my assigned SP3 Commercial OS AEF frontend stories and confirming access to Jira and the Figma board. Then proceed story by story and produce the grooming summary.
+The goal is to deliver clean, implementation-ready frontend Jira stories that the development team and QA can understand without unnecessary details. Prioritize clarity and accuracy over length.
